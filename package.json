@@ -1,0 +1,32 @@
+{
+  "name": "webdriveriomochats",
+  "version": "1.0.0",
+  "description": "Sample WebdriverIO Project with Mocha and Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx wdio run wdio.conf.ts",
+    "report": "marge ./reports/wdio-ma-merged.json --reportTitle 'WDIOTestResult' && move mochawesome-report.html ./mochawesome-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devaryan125/WebDriverIOMochaTS.git"
+  },
+  "author": "Devi Senapati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devaryan125/WebDriverIOMochaTS/issues"
+  },
+  "homepage": "https://github.com/devaryan125/WebDriverIOMochaTS#readme",
+  "dependencies": {
+    "@wdio/cli": "^7.7.4"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.7.4",
+    "@wdio/mocha-framework": "^7.7.4",
+    "@wdio/selenium-standalone-service": "^7.7.4",
+    "mochawesome-report-generator": "^3.1.5",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5",
+    "wdio-mochawesome-reporter": "^4.0.0"
+  }
+}
